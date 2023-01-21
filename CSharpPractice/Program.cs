@@ -1,5 +1,7 @@
 ﻿
 
+using CSharpPractice.BasicsPrograms;
+
 bool loopSkipOrContinue = false;
 
 do
@@ -8,8 +10,9 @@ do
     Console.WriteLine("Please Enter 2 to Execute C# OOPs Programs");
     Console.WriteLine("Please Enter 3 to Execute C# Data Structure & Algorithm");
     Console.WriteLine("Please Enter 4 to Execute C# Reflection Programs");
-
-    bool basicPrograms = int.TryParse(Console.ReadLine(), out int programInputResult);
+    Console.WriteLine("Please Enter 'N' to Skip the Program");
+    string userInput = Console.ReadLine();
+    bool basicPrograms = int.TryParse(userInput, out int programInputResult);
 
 
     if (basicPrograms)
@@ -18,7 +21,8 @@ do
         {
             case 1:
                 Console.WriteLine("-- Welcome to C# Basic Programs! --");
-                Console.WriteLine("Do you Want to continue the Program! Please Enter Y or N");
+                BasicPrograms.BasicProgramsContents();
+                Console.WriteLine("Do you Want to continue the Program! Please Enter Y or Skip the Main Programs N");
                 FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                 break;
 
@@ -43,6 +47,10 @@ do
                 break;
         }
     }
+    else if (userInput != null && userInput.Contains('n', StringComparison.InvariantCultureIgnoreCase))
+    {
+        loopSkipOrContinue = false;
+    }
     else
     {
         Console.WriteLine("Please Enter The Valid Number 1-4 ");
@@ -55,8 +63,8 @@ do
 
 #region Methods 
 
-static void FindYesOrNo(string input, ref bool loopSkipOrContinue)
-{
+ static void FindYesOrNo(string input, ref bool loopSkipOrContinue)
+ {
     bool flag = false;
     do
     {
@@ -77,8 +85,8 @@ static void FindYesOrNo(string input, ref bool loopSkipOrContinue)
             flag = true;
         }
 
-    }while(flag);
+    }
+    while (flag);
    
-   }
-
+ }
 #endregion
