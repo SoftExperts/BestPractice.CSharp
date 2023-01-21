@@ -22,23 +22,23 @@ do
             case 1:
                 Console.WriteLine("-- Welcome to C# Basic Programs! --");
                 BasicPrograms.BasicProgramsContents();
-                Console.WriteLine("Do you Want to continue the Program! Please Enter Y or Skip the Main Programs N");
+                Console.WriteLine("If you Want to continue? Press Y or End the Programs Press N ");
                 FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                 break;
 
             case 2:
                 Console.WriteLine("-- Welcome to C# OOPs Programs! --");
-                Console.WriteLine("Do you Want to continue the Program! Please Enter Y or N");
+                Console.WriteLine("If you Want to continue? Press Y or End the Programs Press N ");
                 FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                 break;
             case 3:
                 Console.WriteLine("-- Welcome to C# Data Structure & Algorithm Programs! --");
-                Console.WriteLine("Do you Want to continue the Program! Please Enter Y or N");
+                Console.WriteLine("If you Want to continue? Press Y or End the Programs Press N ");
                 FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                 break;
             case 4:
                 Console.WriteLine("-- Welcome to C# Reflection Programs! --");
-                Console.WriteLine("Do you Want to continue the Program! Please Enter Y or N");
+                Console.WriteLine("If you Want to continue? Press Y or End the Programs Press N ");
                 FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                 break;
             default:
