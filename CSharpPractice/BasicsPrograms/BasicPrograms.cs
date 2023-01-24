@@ -29,17 +29,22 @@
                         case 1:
                             Console.WriteLine("-- Welcome to C# Airthmetic Programs! --");
                             AirthmeticPrograms.AirthmeticProgramsContents();
-                            Console.WriteLine("Do you Want to continue the Basic Programs Content? Please Enter Y or N");
+                            Console.WriteLine("Do you wnat to countinue Basic Program Content? Press Y  or Skip Program Press N");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
 
                         case 2:
                             Console.WriteLine("-- Welcome to C# Conditional Programs! --");
                             ConditionalPrograms.ConditionalPrograms.ConditionalProgramsContents();
-                            Console.WriteLine("Do you Want to continue the Basic Program Content? Please Enter Y or N");
+                            Console.WriteLine("Do you wnat to countinue Basic Program Content? Press Y  or Skip Program Press N");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
-
+                        case 3:
+                            Console.WriteLine("--- Welcome to C# Looping Programs! ----");
+                            LoopingPrograms.LoopingPrograms.LoopingProgramsContent();
+                            Console.WriteLine("Do you wnat to countinue Basic Program Content? Press Y  or Skip Program Press N");
+                            FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
+                            break;
                         default:
                             Console.WriteLine("Please Enter 1-4!");
                             loopSkipOrContinue = true;
