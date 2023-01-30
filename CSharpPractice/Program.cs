@@ -1,6 +1,4 @@
-﻿
-
-using CSharpPractice.BasicsPrograms;
+﻿using CSharpPractice.BasicsPrograms;
 
 bool loopSkipOrContinue = false;
 
@@ -28,6 +26,7 @@ do
 
             case 2:
                 Console.WriteLine("-- Welcome to C# OOPs Programs! --");
+                OPPsPrograms.OPPsProgramsContents();
                 Console.WriteLine("If you Want to continue? Press Y or End the Programs Press N ");
                 FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                 break;
@@ -84,9 +83,7 @@ do
             input = Console.ReadLine();
             flag = true;
         }
-
     }
-    while (flag);
-   
+    while (flag);   
  }
 #endregion

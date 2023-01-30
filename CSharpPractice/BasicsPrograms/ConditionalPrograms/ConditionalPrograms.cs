@@ -1,6 +1,4 @@
-﻿using System.Security.Cryptography;
-
-namespace CSharpPractice.BasicsPrograms.ConditionalPrograms
+﻿namespace CSharpPractice.BasicsPrograms
 {
     public static class ConditionalPrograms
     {

@@ -1,4 +1,5 @@
 ﻿namespace CSharpPractice.BasicsPrograms
+
 {
     public static class BasicPrograms
     {
@@ -35,13 +36,37 @@
 
                         case 2:
                             Console.WriteLine("-- Welcome to C# Conditional Programs! --");
-                            ConditionalPrograms.ConditionalPrograms.ConditionalProgramsContents();
+                            ConditionalPrograms.ConditionalProgramsContents();
                             Console.WriteLine("Do you wnat to countinue Basic Program Content? Press Y  or Skip Program Press N");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 3:
                             Console.WriteLine("--- Welcome to C# Looping Programs! ----");
                             LoopingPrograms.LoopingPrograms.LoopingProgramsContent();
+                            Console.WriteLine("Do you wnat to countinue Basic Program Content? Press Y  or Skip Program Press N");
+                            FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
+                            break;
+                        case 4:
+                            Console.WriteLine("--------- Welcome to C# Arrays Programs! ---------");
+                            ArraysPrograms.ArraysProgramsContent();
+                            Console.WriteLine("Do you wnat to countinue Basic Program Content? Press Y  or Skip Program Press N");
+                            FindYesOrNo(Console.ReadLine() , ref loopSkipOrContinue);
+                            break;
+                        case 5:
+                            Console.WriteLine("--------- Welcome to C# Structure Programs! ---------");
+                            StructuresPrograms.StructuresProgramsContent();
+                            Console.WriteLine("Do you wnat to countinue Basic Program Content? Press Y  or Skip Program Press N");
+                            FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
+                            break;
+                        case 6:
+                            Console.WriteLine("--------- Welcome to C# Function Programs! ---------");
+                            FunctionPrograms.FunctionProgramsContent();
+                            Console.WriteLine("Do you wnat to countinue Basic Program Content? Press Y  or Skip Program Press N");
+                            FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
+                            break;
+                        case 7:
+                            Console.WriteLine("--------- Welcome to C# Pointers Programs! ---------");
+                            PointersPrograms.PointersProgramsContent();
                             Console.WriteLine("Do you wnat to countinue Basic Program Content? Press Y  or Skip Program Press N");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;

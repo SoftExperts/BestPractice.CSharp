@@ -43,6 +43,13 @@ namespace CSharpPractice.BasicsPrograms.LoopingPrograms
                 Console.WriteLine("Please Enter 28 and get prints Outer and Inner numbers.");
                 Console.WriteLine("Please Enter 29 and get prints Product Component of a number without repeating them.");
                 Console.WriteLine("Please Enter 30 and get Sum Component Of Number following output.");
+                Console.WriteLine("Please Enter 31 and get height of triangle if user enter any numbers.");
+                Console.WriteLine("Please Enter 32 and get Reverce Triangle display in *");
+                Console.WriteLine("Please Enter 33 and get displays block in *.");
+                Console.WriteLine("Pleasse Enter 34 and get displays the reverce numbers.");
+                Console.WriteLine("Please Enter 35 and get dispalys Down to upper triangle in *.");
+                Console.WriteLine("Please Enter 36 and get displays Upper to down triagnle in *.");
+                Console.WriteLine("Please Enter 37 and get displays numbers of triangle.");
                 Console.WriteLine("Please Enter 'N' to Skip the Program");
                 string userInput = Console.ReadLine();
                 bool basicPrograms = int.TryParse(userInput, out int programInputResult);
@@ -199,6 +206,41 @@ namespace CSharpPractice.BasicsPrograms.LoopingPrograms
                         case 30:
                             FindSumComponentOfNumber();
                             Console.WriteLine("If you Want to Continue Loops Program? Press Y or Skip Program Press N");
+                            FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
+                            break;
+                        case 31:
+                            FindTriangleOFCharacter();
+                            Console.WriteLine("If you Want to Continue Loops Program? Press Y or Skip Program Press N");
+                            FindYesOrNo(Console.ReadLine() , ref loopSkipOrContinue);
+                            break;
+                        case 32:
+                            FindReverceTriange();
+                            Console.WriteLine("If you Want to Continue Loops Program? Press Y or Skip Program Press N");
+                            FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
+                            break;
+                        case 33:
+                            FindBlock();
+                            Console.WriteLine("If you Want to Continue Loops Program? Press Y or Skip Program Press N");
+                            FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
+                            break;
+                        case 34:
+                            FindReverceNumbers();
+                            Console.WriteLine("If you Want to Continue Loops Program? Press Y or Skip Program Press N");
+                            FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
+                            break;
+                        case 35:
+                            FindDownTriangle();
+                            Console.WriteLine("If you want to Continue loops program? Press Y or Skip Program Press N");
+                            FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
+                            break;
+                        case 36:
+                            FindUpperToDownTriangle();
+                            Console.WriteLine("If you want to Continue loops program? Press Y or Skip Program Press N");
+                            FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
+                            break;
+                        case 37:
+                            FindNumbersOfTriangle();
+                            Console.WriteLine("If you want to Continue loops program? Press Y or Skip Program Press N");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         default:
@@ -797,9 +839,7 @@ namespace CSharpPractice.BasicsPrograms.LoopingPrograms
             int.TryParse(Console.ReadLine(), out int userNum);
 
             Console.WriteLine("Product Component of " + userNum + " are ");
-            for (outer = userNum; outer >= sum; outer++)
-            {
-
+            for (outer = userNum; outer >= sum; outer--)            
                 for(inner = 1; inner <= userNum; inner++)
                 {
                     if(outer * inner == userNum)
@@ -807,24 +847,144 @@ namespace CSharpPractice.BasicsPrograms.LoopingPrograms
                         Console.WriteLine(outer + " * " + inner + " = " + outer * inner);
                         sum = inner + 1;
                     }
+                }            
+        }
+
+        /// <summary>
+        /// xxxxxxx This Method is used to Displays the  Find Sum Component Of Number following output.
+        /// </summary>
+        private static void FindSumComponentOfNumber()
+        {
+            int  outer, sum = 1;
+            for(outer = 1; outer <= 5; outer++)     // 1 <= 5 true  , 2 <= 5 true , 3<= 5 true
+            {
+                Console.Write("1");                 // print 1  , 1 , 1
+                for(int inner = 2; inner <= outer;  inner++)    // 2  <= 1 false    , 2 <= 2 true , 3 <= 2 false , 2 <= 3 true , 3 <= 3 true , 4 <= 3 false
+                {
+                    Console.Write("+" + inner);     // 1 + 2 , + 2 , + 3
+                     sum = sum + inner;         // 3 = 1 + 2  , 5 = 3 + 2 , 8 = 5 + 3
                 }
+                Console.WriteLine("=" + sum  );       // 1 = 1 , 1+2 = 3 , 1 + 2 + 3 = 8
             }
         }
 
         /// <summary>
-        /// This Method is used to Displays the  Find Sum Component Of Number following output.
+        /// This Method is used to find height of triangle if user enter any numbers.
         /// </summary>
-        private static void FindSumComponentOfNumber()
+        private static void FindTriangleOFCharacter()
         {
-            int inner = 2, outer, sum = 1;
-            for(outer = 1; outer <= 5; outer++)
+            char ch = 'A';
+            int outer, inner;
+            Console.WriteLine("Enter the height of triangle :");
+            int.TryParse(Console.ReadLine(), out int userInputNumber);
+
+            for (outer = 1; outer <= userInputNumber; outer++)
             {
-                Console.WriteLine('1');
-                for(inner = 2; inner <= outer; inner++)
-                    Console.WriteLine(outer + '+' + inner);
-                sum = sum + inner;
+                for (inner = 1; inner <= outer; inner++)
+                { 
+                    Console.Write(ch + " ");
+                    ch++;
+                }
+
+               Console.WriteLine("\n");
             }
-            Console.WriteLine(outer + "+" + inner + "=" + sum);
+        }
+
+        /// <summary>
+        /// This Method is used to reverce triangle in *.
+        /// </summary>
+        private static void FindReverceTriange()
+        {
+            for(int i = 1; i <= 7; i++)
+            {
+                int j = i;
+                while(j <= 7)
+                {
+                    Console.Write("*");
+                    j++;
+                }
+                Console.WriteLine();
+            }
+        }
+
+        /// <summary>
+        /// This Mehtod is used to displays block in *.
+        /// </summary>
+        private static void FindBlock()
+        {
+            for(int m = 1; m <= 5; m++)
+            {
+                for(int n = 1; n <= 5; n++)
+                    Console.Write("*");
+                Console.WriteLine();
+            }
+
+        }
+
+        /// <summary>
+        /// This Method is used to displays the reverce numbers.
+        /// </summary>
+        private static void FindReverceNumbers()
+        {
+            int m = 4;
+            do
+            {
+                int n = m;
+                do
+                {
+                    Console.Write(m + "\t");
+                    n--;
+                }
+                while (n >= 1);
+                Console.WriteLine();
+                m--;
+            }
+            while(m >= 1);
+        }
+
+        /// <summary>
+        /// This Method is used to dispalys Down to upper triangle in *.
+        /// </summary>
+        private static void FindDownTriangle()
+        {
+            for(int i = 5; i >= 1; i--)
+            {
+                for(int s = 1; s <= 5 - i; s++)
+                Console.Write(" ");
+                for(int j = 1; j <= i; j++)
+                    Console.Write("*");
+                Console.WriteLine();
+            }
+        }
+
+        /// <summary>
+        /// This Method is used to displays Upper to down triagnle in *.
+        /// </summary>
+        private static void FindUpperToDownTriangle()
+        {
+            for(int i = 1; i <= 5; i++)
+            {
+                for(int j = 1; j <= i; j++)
+                    Console.Write("*");
+                Console.WriteLine();
+            }
+        }
+
+        /// <summary>
+        /// This Method is used to displays numbers of triangle.
+        /// </summary>
+        private static void FindNumbersOfTriangle()
+        {
+            int c = 5;
+            for(int i = 1; i <= 5; i++)
+            {
+                for(int k = 1; k <= c; k++)
+                    Console.Write(" ");
+                for(int j = 1; j<= i; j++)
+                    Console.Write(i);     // (0) its means start 1 to 5 
+                Console.WriteLine();
+                c--;
+            }
         }
     }
 }
