@@ -14,7 +14,7 @@ namespace CSharpPractice.BasicsPrograms
             do
             {
                 Console.WriteLine("Please Enter 1 to Display Basic OOPs Programs");
-                //Console.WriteLine("Please Enter 2 to Display Conditional Programs");
+                Console.WriteLine("Please Enter 2 to Display Constructor And Dectructor Programs");
                 //Console.WriteLine("Please Enter 3 to Display Looping Programs");
                 //Console.WriteLine("Please Enter 4 to Display Arrays Programs");
                 //Console.WriteLine("Please Enter 5 to Display Structrues Programs");
@@ -36,12 +36,12 @@ namespace CSharpPractice.BasicsPrograms
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
 
-                            //case 2:
-                            //    Console.WriteLine("-- Welcome to C# Conditional Programs! --");
-                            //    ConditionalPrograms.ConditionalProgramsContents();
-                            //    Console.WriteLine("Do you wnat to countinue Basic Program Content? Press Y  or Skip Program Press N");
-                            //    FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
-                            //    break;
+                        case 2:
+                            Console.WriteLine("-- Welcome to C# Constructor And Dectructor Programs! --");
+                            ConstructorAndDectructorPrograms.ConstructorAndDectructorProgramsContents();
+                            Console.WriteLine("Do you wnat to countinue Basic Program Content? Press Y  or Skip Program Press N");
+                            FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
+                            break;
                             //case 3:
                             //    Console.WriteLine("--- Welcome to C# Looping Programs! ----");
                             //    LoopingPrograms.LoopingPrograms.LoopingProgramsContent();

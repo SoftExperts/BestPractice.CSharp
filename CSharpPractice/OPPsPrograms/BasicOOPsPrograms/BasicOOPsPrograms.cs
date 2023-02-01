@@ -135,9 +135,9 @@
             Console.WriteLine("Your Car color is: " + Car.color);
         }
 
-        private static void FindInCarDetails()
+        private static void FindInCarDetails()  // method
         {
-            Car_Details.model = "Mustang";
+            Car_Details.model = "Mustang";          //call
             Console.WriteLine("Car Model is: " + Car_Details.model);
         }
     }
@@ -156,7 +156,7 @@
     }
     static class Car_Details
     {
-        public static string model;
+        public static string model;     // feilds or data member   
         public static int year;
         public static string color;
     }
