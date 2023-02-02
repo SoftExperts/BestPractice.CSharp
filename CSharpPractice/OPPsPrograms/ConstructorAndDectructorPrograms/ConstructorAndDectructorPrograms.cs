@@ -1,8 +1,4 @@
-﻿using CSharpPractice.BasicsPrograms;
-using System.Runtime.CompilerServices;
-using System.Xml.Linq;
-
-namespace CSharpPractice.OPPsPrograms
+﻿namespace CSharpPractice.OPPsPrograms
 {
     public static class ConstructorAndDectructorPrograms
     {
@@ -18,6 +14,8 @@ namespace CSharpPractice.OPPsPrograms
                 Console.WriteLine("Please Enter 2 and get the static Constructor.");
                 Console.WriteLine("Please Enter 3 and get the Car Model.");
                 Console.WriteLine("Please Enter 4 and get the Many Parameterized Constructor.");
+                Console.WriteLine("Please Enter 5 and get the Many Student Parameterized Constructor.");
+                Console.WriteLine("Please Enter 6 and get the Parameterized Destructor.");
                 Console.WriteLine("Please Enter 'N' to Skip the Program");
 
                 string userInput = Console.ReadLine();
@@ -45,6 +43,17 @@ namespace CSharpPractice.OPPsPrograms
                         case 4:
                             FindCarData();
                             Console.WriteLine("Do you want to continue the Basic OOPs Program! Please Enter Y or N");
+                            FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
+                            break;
+                        case 5:
+                            FindStudentData();
+                            Console.WriteLine("Do you want to continue the Basic OOPs Program! Please Enter Y or N");
+                            FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
+                            break;
+                        case 6:                        
+                            FindBooksData();
+                            Console.WriteLine("Do you want to continue the Basic OOPs Program! Please Enter Y or N");
+                            FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         default:
                             Console.WriteLine("Please Enter 1-4!");
@@ -116,8 +125,13 @@ namespace CSharpPractice.OPPsPrograms
         /// </summary>
         private static void FindParameterizedConstructor()
         {
-            new CarModel("Suzki");
-            CarModel.DisplayCarModel();
+            Console.WriteLine("Enter Car Model:");
+            string modelN = (Console.ReadLine());
+            modelN = modelN;
+            //new CarModel("Suzki");
+            CarModel car = new CarModel(modelN);
+            car.DisplayCarModel();
+            
             
         }
         /// <summary>
@@ -125,8 +139,39 @@ namespace CSharpPractice.OPPsPrograms
         /// </summary>
         private static void FindCarData()
         {
-            new CarDetails(2932, "Mehraan", "White");
-            CarDetails.ShowCarDetails();
+            Console.WriteLine("Enter Car Model:");
+            int.TryParse(Console.ReadLine(), out int modelNo);
+            modelNo = modelNo;
+            Console.WriteLine("Enter Car Name:");
+            string name = Console.ReadLine();
+            Console.WriteLine("Enter Car Color:");
+            string color = Console.ReadLine();
+            CarDetails Mehraan = new CarDetails(modelNo, name, color);
+            Mehraan.ShowCarDetails();
+        }
+        private static void FindStudentData()
+        {
+            Console.WriteLine("Enter Student Name:");
+            string name = (Console.ReadLine());
+            Console.WriteLine("Enter Student Age:");
+            int.TryParse(Console.ReadLine(), out int age);
+            age = age;
+            Student Aqib = new Student(name, age);
+            Aqib.DisplayStudent();
+        }
+        /// <summary>
+        /// This Method is used to find the Destructor.
+        /// Note: Destructor can't be public. We can't apply any modifier on destructors.
+        /// </summary>
+        private static void FindBooksData()
+        {
+            Console.WriteLine("Enter a Book Name:");
+            string bname = (Console.ReadLine());
+            Console.WriteLine("Enter Book Version");
+            int.TryParse(Console.ReadLine(), out int version);
+            version = version;
+            Books CSharp = new Books(bname, version);
+            CSharp.DisplayBook();            
         }
     }   
     class User
@@ -173,16 +218,14 @@ namespace CSharpPractice.OPPsPrograms
     //-----------Parameterized Constructor.
     class CarModel
     {
-        public static string modelN;
+        private string modelN;
 
-        public CarModel(string userModel)
+        public CarModel(string modelN)
         {
-            //Console.WriteLine("Enter Car Model:");
-            //string userInput = (Console.ReadLine());
-            //userModel = userInput;
-            modelN = userModel;
+            
+            this.modelN = modelN;
         }
-        public static void DisplayCarModel()
+        public void DisplayCarModel()
         {
             Console.WriteLine("Your Car Model is: " + modelN);
         }
@@ -190,21 +233,60 @@ namespace CSharpPractice.OPPsPrograms
     //---------- Many Parameters --------
     class CarDetails
     {
-        public static int modelNo;
-        public static string name;
-        public static string color;
+        public  int modelNo;
+        public string name;
+        public string color;
 
-        public CarDetails(int carModel, string carName, string carColor)
+        public CarDetails(int modelNo, string name, string color)
         {
-            modelNo= carModel;
-            name= carName;
-            color= carColor;
+            this.modelNo= modelNo;
+            this.name= name;
+            this.color= color;
         }
-        public static void ShowCarDetails()
+        public void ShowCarDetails()
         {
             Console.WriteLine("Your Car Model No: " + modelNo);
             Console.WriteLine("Your Car Name: " + name);
             Console.WriteLine("Your Car Color: " + color);
         }
     }
+    class Student
+    {
+        public string name;
+        public int age;
+
+        public Student(string name, int age)
+        {
+            this.name = name;
+            this.age = age;
+        }
+        public void DisplayStudent()
+        {
+            Console.WriteLine("Student Name: " + name);
+            Console.WriteLine("Student Age: " + age);
+        }
+    }
+    // ------------- Destructor ----------
+    class Books
+    {
+        public string bname;
+        public int version;
+
+        public Books(string bname, int version)
+        {
+            this.bname = bname;
+            this.version = version;
+        }
+        public void DisplayBook()
+        {
+            Console.WriteLine("---------------------------");
+            //Console.WriteLine("Book Name: " + bname);
+            Console.WriteLine("Book Version: " + version);
+        }
+        ~Books()
+        {
+            Console.WriteLine("Destructor Called for " + bname);    // remove the memory in memory location.
+        }
+    }
+
 }

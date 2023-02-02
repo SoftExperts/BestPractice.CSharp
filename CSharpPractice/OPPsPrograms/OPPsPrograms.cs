@@ -15,9 +15,9 @@ namespace CSharpPractice.BasicsPrograms
             {
                 Console.WriteLine("Please Enter 1 to Display Basic OOPs Programs");
                 Console.WriteLine("Please Enter 2 to Display Constructor And Dectructor Programs");
-                //Console.WriteLine("Please Enter 3 to Display Looping Programs");
-                //Console.WriteLine("Please Enter 4 to Display Arrays Programs");
-                //Console.WriteLine("Please Enter 5 to Display Structrues Programs");
+                Console.WriteLine("Please Enter 3 to Display Properties Programs");
+                Console.WriteLine("Please Enter 4 to Display Inheritance Programs");
+                Console.WriteLine("Please Enter 5 to Display Polymorphism Programs");
                 //Console.WriteLine("Please Enter 6 to Display Functions Programs");
                 //Console.WriteLine("Please Enter 7 to Display Pointers Programs");
                 Console.WriteLine("Please Enter 'N' to Skip the Program");
@@ -42,24 +42,24 @@ namespace CSharpPractice.BasicsPrograms
                             Console.WriteLine("Do you wnat to countinue Basic Program Content? Press Y  or Skip Program Press N");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
-                            //case 3:
-                            //    Console.WriteLine("--- Welcome to C# Looping Programs! ----");
-                            //    LoopingPrograms.LoopingPrograms.LoopingProgramsContent();
-                            //    Console.WriteLine("Do you wnat to countinue Basic Program Content? Press Y  or Skip Program Press N");
-                            //    FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
-                            //    break;
-                            //case 4:
-                            //    Console.WriteLine("--------- Welcome to C# Arrays Programs! ---------");
-                            //    ArraysPrograms.ArraysProgramsContent();
-                            //    Console.WriteLine("Do you wnat to countinue Basic Program Content? Press Y  or Skip Program Press N");
-                            //    FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
-                            //    break;
-                            //case 5:
-                            //    Console.WriteLine("--------- Welcome to C# Structure Programs! ---------");
-                            //    StructuresPrograms.StructuresProgramsContent();
-                            //    Console.WriteLine("Do you wnat to countinue Basic Program Content? Press Y  or Skip Program Press N");
-                            //    FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
-                            //    break;
+                        case 3:
+                            Console.WriteLine("--- Welcome to C# Properties Programs! ----");
+                            PropertiesPrograms.PropertiesProgramsContents();
+                            Console.WriteLine("Do you wnat to countinue Basic Program Content? Press Y  or Skip Program Press N");
+                            FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
+                            break;
+                        case 4:
+                            Console.WriteLine("--------- Welcome to C# Inheritance Programs! ---------");
+                            InheritancePrograms.InheritanceProgramsContents();
+                            Console.WriteLine("Do you wnat to countinue Basic Program Content? Press Y  or Skip Program Press N");
+                            FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
+                            break;
+                        case 5:
+                            Console.WriteLine("--------- Welcome to C# Polymorphism Programs! ---------");
+                            PolymorphismPrograms.PolymorphismProgramsContents();
+                            Console.WriteLine("Do you wnat to countinue Basic Program Content? Press Y  or Skip Program Press N");
+                            FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
+                            break;
                             //case 6:
                             //    Console.WriteLine("--------- Welcome to C# Function Programs! ---------");
                             //    FunctionPrograms.FunctionProgramsContent();
