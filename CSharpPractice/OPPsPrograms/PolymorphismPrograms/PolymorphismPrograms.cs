@@ -1,13 +1,9 @@
-﻿using System.Runtime.ExceptionServices;
-using System.Transactions;
-using System.Xml.Linq;
-
-namespace CSharpPractice.OPPsPrograms
+﻿namespace CSharpPractice.OPPsPrograms
 {
     public static class PolymorphismPrograms
     {
         /// <summary>
-        /// Constructor And Properties Programs Contents
+        /// Polymorphism Programs Contents
         /// </summary>
         public static void PolymorphismProgramsContents()
         {
@@ -112,12 +108,35 @@ namespace CSharpPractice.OPPsPrograms
             }
             while (loopSkipOrContinue);
         }
-        //-------------- Polymorphism Programs ----------------
+
         /// <summary>
         /// Validate the Input in Case of Yes or No
         /// </summary>
-        /// <param name="input"></param>
-        /// <param name="loopSkipOrContinue"></param>
+        
+        private static void FindYesOrNo(string input, ref bool loopSkipOrContinue)
+        {
+            bool flag = false;
+            do
+            {
+                if (input != null && input.Contains('y', StringComparison.InvariantCultureIgnoreCase))
+                {
+                    loopSkipOrContinue = true;
+                    flag = false;
+                }
+                else if (input != null && input.Contains('n', StringComparison.InvariantCultureIgnoreCase))
+                {
+                    loopSkipOrContinue = false;
+                    flag = false;
+                }
+                else
+                {
+                    Console.WriteLine("Please Enter the Y or N");
+                    input = Console.ReadLine();
+                    flag = true;
+                }
+            } while (flag);
+        }
+        /// //-------------- Polymorphism Programs ----------------
         /// This Method is used to find the Run time polymorphism.
         #region
         private static void FindRunTime()
@@ -151,30 +170,6 @@ namespace CSharpPractice.OPPsPrograms
             Console.WriteLine(p.color11);
         }
         #endregion
-        private static void FindYesOrNo(string input, ref bool loopSkipOrContinue)
-        {
-            bool flag = false;
-            do
-            {
-                if (input != null && input.Contains('y', StringComparison.InvariantCultureIgnoreCase))
-                {
-                    loopSkipOrContinue = true;
-                    flag = false;
-                }
-                else if (input != null && input.Contains('n', StringComparison.InvariantCultureIgnoreCase))
-                {
-                    loopSkipOrContinue = false;
-                    flag = false;
-                }
-                else
-                {
-                    Console.WriteLine("Please Enter the Y or N");
-                    input = Console.ReadLine();
-                    flag = true;
-                }
-            } while (flag);
-        }
-
         /// <summary>
         /// This Method is used to Polymorphism means "many forms", and it occurs when we have many classes 
         /// that are related to each other by inheritance.

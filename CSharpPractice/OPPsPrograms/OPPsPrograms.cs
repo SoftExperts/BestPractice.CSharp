@@ -18,8 +18,9 @@ namespace CSharpPractice.BasicsPrograms
                 Console.WriteLine("Please Enter 3 to Display Properties Programs");
                 Console.WriteLine("Please Enter 4 to Display Inheritance Programs");
                 Console.WriteLine("Please Enter 5 to Display Polymorphism Programs");
-                //Console.WriteLine("Please Enter 6 to Display Functions Programs");
-                //Console.WriteLine("Please Enter 7 to Display Pointers Programs");
+                Console.WriteLine("Please Enter 6 to Display Abstruction Programs");
+                Console.WriteLine("Please Enter 7 to Display Encapsulation Programs");
+                Console.WriteLine("Please Enter 8 to Display Enumeration Programs");
                 Console.WriteLine("Please Enter 'N' to Skip the Program");
 
                 string userInput = Console.ReadLine();
@@ -60,22 +61,28 @@ namespace CSharpPractice.BasicsPrograms
                             Console.WriteLine("Do you wnat to countinue Basic Program Content? Press Y  or Skip Program Press N");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
-                            //case 6:
-                            //    Console.WriteLine("--------- Welcome to C# Function Programs! ---------");
-                            //    FunctionPrograms.FunctionProgramsContent();
-                            //    Console.WriteLine("Do you wnat to countinue Basic Program Content? Press Y  or Skip Program Press N");
-                            //    FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
-                            //    break;
-                            //case 7:
-                            //    Console.WriteLine("--------- Welcome to C# Pointers Programs! ---------");
-                            //    PointersPrograms.PointersProgramsContent();
-                            //    Console.WriteLine("Do you wnat to countinue Basic Program Content? Press Y  or Skip Program Press N");
-                            //    FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
-                            //    break;
-                            //default:
-                            //    Console.WriteLine("Please Enter 1-4!");
-                            //    loopSkipOrContinue = true;
-                            //    break;
+                        case 6:
+                            Console.WriteLine("--------- Welcome to C# Abstruction Programs! ---------");
+                            AbstructionPrograms.AbstructionProgramsContents();
+                            Console.WriteLine("Do you wnat to countinue Basic Program Content? Press Y  or Skip Program Press N");
+                            FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
+                            break;
+                        case 7:
+                            Console.WriteLine("--------- Welcome to C# Encapsulation Programs! ---------");
+                            EncapsulationPrograms.EncapsulationProgramsContents();
+                            Console.WriteLine("Do you wnat to countinue Basic Program Content? Press Y  or Skip Program Press N");
+                            FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
+                            break;
+                        case 8:
+                            Console.WriteLine("--------- Welcome to C# Enumeration Programs! ---------");
+                            EnumerationPrograms.EnumerationProgramsContents();
+                            Console.WriteLine("Do you wnat to countinue Basic Program Content? Press Y  or Skip Program Press N");
+                            FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
+                            break;
+                        default:
+                            Console.WriteLine("Please Enter 1-4!");
+                            loopSkipOrContinue = true;
+                            break;
                     }
                 }
                 else if (userInput != null && userInput.Contains('n', StringComparison.InvariantCultureIgnoreCase))
