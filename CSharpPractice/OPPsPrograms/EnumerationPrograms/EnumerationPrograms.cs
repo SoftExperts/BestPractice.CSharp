@@ -155,10 +155,10 @@ namespace CSharpPractice.OPPsPrograms
     }
     enum EnumColor
     {
-            Red,
-            Green,
-            Blue,
-            Yellow      
+        Red,
+        Green,
+        Blue,
+        Yellow
     }
 
 }
