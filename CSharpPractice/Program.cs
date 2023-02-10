@@ -26,7 +26,7 @@ do
 
             case 2:
                 Console.WriteLine("-- Welcome to C# OOPs Programs! --");
-                OPPsPrograms.OPPsProgramsContents();
+                OOPsPrograms.OOPsProgramsContents();
                 Console.WriteLine("If you Want to continue? Press Y or End the Programs Press N ");
                 FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                 break;
@@ -87,28 +87,3 @@ static void FindYesOrNo(string input, ref bool loopSkipOrContinue)
     while (flag);
 }
 #endregion
-
-//// Online C# Editor for free
-//// Write, Edit and Run your C# code using C# Online Compiler
-
-//public class HelloWorld
-//{
-//    static DateTime time;
-//    static void Main(string[] args)
-//    {
-//        if (time == null)
-//            Console.WriteLine("Hello Mono World");
-//    }
-//}
-//var ints = new List<int>( 1 );
-//IEnumerable<int> ns = ints.Select(n => n * 0);
-//ints.Add( 2 );
-//foreach( int n in ns )
-//    Console.WriteLine(n + ",");
-
-//Action[] actions = new Action[3];
-//for (int i = 0; i < 3; i++)
-//    actions[i] = () => Console.Write(i);
-//foreach (Action a in actions) a();
-
-//Console.WriteLine((TimeSpan.FromDays(10) - TimeSpan.FromSeconds(1)).Seconds);

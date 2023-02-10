@@ -3,24 +3,25 @@
     public static class ArraysPrograms
     {
         /// <summary>
-        /// Looping Programs Content
+        /// Content of Array Programming
         /// </summary>
         public static void ArraysProgramsContent()
         {
             bool loopSkipOrContinue = false;
             do
             {
-                Console.WriteLine("Please Enter 1 and get All values in the arrays.");
-                Console.WriteLine("Please Enter 2 and get the display all values using for loop.");
-                Console.WriteLine("Please Enter 3 and get the display the sum and average of these values.");
-                Console.WriteLine("Please Enter 4 and get find and display the maximum number.");
-                Console.WriteLine("Please Enter 5 and get find and display the minimum number.");
-                Console.WriteLine("Please Enter 6 and get display Actual order and Reverce order.");
-                Console.WriteLine("Please Enter 7 and get searches the numbers in the array");
-                Console.WriteLine("Please Enter 8 and get sorts array in ascending order.");
-                Console.WriteLine("Please Enter 9 and get Two dimensional array of 2 rows and 3 column.");
+                Console.WriteLine("Please Enter 1 and to see the program of all values in the arrays.");
+                Console.WriteLine("Please Enter 2 and to see the program of all values using for loop.");
+                Console.WriteLine("Please Enter 3 and to see the program of sum and average of these values.");
+                Console.WriteLine("Please Enter 4 and to see the program of finding maximum number.");
+                Console.WriteLine("Please Enter 5 and to see the program of sum finding minimum number.");
+                Console.WriteLine("Please Enter 6 and to see the program of Actual order and Reverce order.");
+                Console.WriteLine("Please Enter 7 and to see the program of searches the numbers in the array");
+                Console.WriteLine("Please Enter 8 and to see the program of sorting array in ascending order.");
+                Console.WriteLine("Please Enter 9 and to see the program of Two dimensional array of 2 rows and 3 column.");
                 Console.WriteLine("Please Enter 'N' to Skip the Program");
-                string userInput = Console.ReadLine();
+                string? userInput = Console.ReadLine();
+
                 bool basicPrograms = int.TryParse(userInput, out int programInputResult);
 
                 if (basicPrograms)
@@ -29,47 +30,47 @@
                     {
                         case 1:
                             FindAllValues();
-                            Console.WriteLine("If you Want to Continue Loops Program? Press Y or Skip Program Press N");
+                            Console.WriteLine("If you want to Continue Loops Program? Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 2:
                             FindAllValuesUsingLoop();
-                            Console.WriteLine("If you Want to Continue Loops Program? Press Y or Skip Program Press N");
+                            Console.WriteLine("If you Want to Continue Loops Program? PPress Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 3:
                             FindSumAndAverage();
-                            Console.WriteLine("If you Want to Continue Loops Program? Press Y or Skip Program Press N");
+                            Console.WriteLine("If you Want to Continue Loops Program? Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 4:
                             FindMaxValues();
-                            Console.WriteLine("If you Want to Continue Loops Program? Press Y or Skip Program Press N");
+                            Console.WriteLine("If you Want to Continue Loops Program? Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 5:
                             FindMiniValue();
-                            Console.WriteLine("If you Want to Continue Loops Program? Press Y or Skip Program Press N");
+                            Console.WriteLine("If you Want to Continue Loops Program? Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 6:
                             FindActualAndReverce();
-                            Console.WriteLine("\nIf you Want to Continue Loops Program? Press Y or Skip Program Press N");
+                            Console.WriteLine("\nIf you Want to Continue Loops Program? Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 7:
                             FindSearchesNumbers();
-                            Console.WriteLine("\nIf you Want to Continue Loops Program? Press Y or Skip Program Press N");
+                            Console.WriteLine("\nIf you Want to Continue Loops Program? Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 8:
                             FindSortingNumbers();
-                            Console.WriteLine("\nIf you Want to Continue Loops Program? Press Y or Skip Program Press N");
+                            Console.WriteLine("\nIf you Want to Continue Loops Program? Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 9:
                             FindTwoDArray();
-                            Console.WriteLine("\nIf you Want to Continue Loops Program? Press Y or Skip Program Press N");
+                            Console.WriteLine("\nIf you Want to Continue Loops Program? Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         default:
@@ -321,5 +322,4 @@
             }
         }
     }
-    
 }

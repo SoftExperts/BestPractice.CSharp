@@ -10,30 +10,31 @@
             bool loopSkipOrContinue = false;
             do
             {
-                Console.WriteLine("Please Enter 1 to Student Marks");
-                Console.WriteLine("Please Enter 2 to Inputs two Numbers and finds Whether both are Equal.");
-                Console.WriteLine("Please Enter 3 to Inputs Two Numbers and Finds if Second Number is Square of First");
-                Console.WriteLine("Please Enter 4 to Inputs Marks of Three Subjects.");
-                Console.WriteLine("Please Enter 5 and get Maximum Numbers Program Exicute");
-                Console.WriteLine("Please Enter 6 and get Input a number and determine whether it is Positive, Negative or 0.");
-                Console.WriteLine("Please Enter 7 and get Inputs Five Integers. It finds and Prints Largest and Smallest Integer.");
-                Console.WriteLine("Pleasse Enter 8 and get Inputs a Number and Finds Whether it is Even or Odd.");
-                Console.WriteLine("Please Enter 9 and get the Inputs a year and finds whether it is a leap year or Not!.");
-                Console.WriteLine("Please Enter 10 and Get the Inputs Salary and Grade.");
-                Console.WriteLine("Please Enter 11 and get the Detemines and Prints if the first integer is a multuple of second integer");
-                Console.WriteLine("Please Enter 12 and get the  Inputs Test Result of a Student");
-                Console.WriteLine("Please Enter 13 and get Calculate the Electricity Bill");
-                Console.WriteLine("Please Enter 14 and get the Calculate the Area of Circle.");
-                Console.WriteLine("Please Enter 15 and get Three Inputs numbers and display Equal or Not.");
-                Console.WriteLine("Pleae Enter 16 and get the Vowel Characters.");
-                Console.WriteLine("Please Enter 17 and get the Weeks Day.");
-                Console.WriteLine("Please Enter 18 and get Vowel Character in Switch Case.");
-                Console.WriteLine("Please Enter 19 and get Floating Point Number in Switch Case.");
-                Console.WriteLine("Please Enter 20 and get menu of a Health Club.");
-                Console.WriteLine("Please Enter 21 and get Covert ASCII number to Character and vice versa.");
-                Console.WriteLine("Please Enter 22 and get  how to work GoTo Loop");
+                Console.WriteLine("Please Enter 1 to see the program of Student Marks Calculation!");
+                Console.WriteLine("Please Enter 2 to see the program of finding two numbers are Equal!");
+                Console.WriteLine("Please Enter 3 to see the program of finding Second Number is Square of First!");
+                Console.WriteLine("Please Enter 4 to see the program of Student Admission is granted or not!");
+                Console.WriteLine("Please Enter 5 to see the program of Find Maximum Number!");
+                Console.WriteLine("Please Enter 6 to see the program Number is Positive, Negative or 0!");
+                Console.WriteLine("Please Enter 7 to see the program of finding Largest and Smallest Number!");
+                Console.WriteLine("Pleasse Enter 8 to see the program Whether Number is Even or Odd!");
+                Console.WriteLine("Please Enter 9 to see the program of year is leap or Not!");
+                Console.WriteLine("Please Enter 10 to see the program of Salary Calculation on the base of Grade!");
+                Console.WriteLine("Please Enter 11 to see the program Whether first Number is a multuple of second Number!");
+                Console.WriteLine("Please Enter 12  to see the program of Student Result Calculation!");
+                Console.WriteLine("Please Enter 13 to see the program of the Electricity Bill Calculation!");
+                Console.WriteLine("Please Enter 14 to see the program of the Area of Circle Calculation!");
+                Console.WriteLine("Please Enter 15 to see the program Numbers are Equal or Not!");
+                Console.WriteLine("Pleae Enter 16  to see the program of Vowel Characters Usage!");
+                Console.WriteLine("Please Enter 17 to see the program of Weeks Day!");
+                Console.WriteLine("Please Enter 18 to see the program of Vowel Character in Switch Case!");
+                Console.WriteLine("Please Enter 19 to see the program of Airthmetic Operations On Floating Numbers in Switch Case!");
+                Console.WriteLine("Please Enter 20 to see the program of Health Club Menue!");
+                Console.WriteLine("Please Enter 21 to see the program of Covert ASCII number to Character and vice versa Conversion!");
+                Console.WriteLine("Please Enter 22 to see the program of GoTo Label Working!");
                 Console.WriteLine("Please Enter 'N' to Skip the Program");
-                string userInput = Console.ReadLine();
+                string? userInput = Console.ReadLine();
+
                 bool basicPrograms = int.TryParse(userInput, out int programInputResult);
 
                 if (basicPrograms)
@@ -42,112 +43,112 @@
                     {
                         case 1:
                             FindStudentMarksStatus();
-                            Console.WriteLine("If you Want to Continue Conditional Program? Press Y or Skip Program Press N");
+                            Console.WriteLine("If you Want to Continue Conditional Program? Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 2:
                             FindTwoNumbersEquality();
-                            Console.WriteLine("If you Want to Continue Conditional Program? Press Y or Skip Program Press N");
+                            Console.WriteLine("If you Want to Continue Conditional Program? Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 3:
                             FindSecondNumberSquare();
-                            Console.WriteLine("If you Want to Continue Conditional Program? Press Y or Skip Program Press N");
+                            Console.WriteLine("If you Want to Continue Conditional Program? Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 4:
                             AdmissionGranted();
-                            Console.WriteLine("If you want to Continue Conditional Program? Press Y or Skip Program Press N");
+                            Console.WriteLine("If you want to Continue Conditional Program? Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 5:
                             FindMaximumNumber();
-                            Console.WriteLine("If you want to Continue Conditional Program? Press Y or Skip Program Press N");
+                            Console.WriteLine("If you want to Continue Conditional Program? Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 6:
                             FindingNumber();
-                            Console.WriteLine("If you want to Continue Conditional Program? Press Y or Skip Program Press N");
+                            Console.WriteLine("If you want to Continue Conditional Program? Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 7:
                             FindLargestAndSmallestNumbers();
-                            Console.WriteLine("If you want to Continue Conditional Program? Press Y or Skip Program Press N");
+                            Console.WriteLine("If you want to Continue Conditional Program? Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 8:
                             FindEvenOrOddNumber();
-                            Console.WriteLine("If you want to Continue Conditional Program? Press Y or Skip Program Press N");
+                            Console.WriteLine("If you want to Continue Conditional Program? Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 9:
                             FindLeapYears();
-                            Console.WriteLine("If you want to Continue Conditional Program? Press Y or Skip Program Press N");
+                            Console.WriteLine("If you want to Continue Conditional Program? Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 10:
                             FindEmployeeBonus();
-                            Console.WriteLine("If you want to Continue Conditional Program? Press Y or Skip Program Press N");
+                            Console.WriteLine("If you want to Continue Conditional Program? Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 11:
                             FindMultipleNumber();
-                            Console.WriteLine("If you want to Continue Conditional Program? Press Y or Skip Program Press N");
+                            Console.WriteLine("If you want to Continue Conditional Program? Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 12:
                             StudentFindTestResult();
-                            Console.WriteLine("If you want to Continue Conditional Program? Press Y or Skip Program Press N");
+                            Console.WriteLine("If you want to Continue Conditional Program? Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 13:
                             CalculateElectricityBill();
-                            Console.WriteLine("If you want to Continue Conditional Program? Press Y or Skip Program Press N");
+                            Console.WriteLine("If you want to Continue Conditional Program? Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 14:
                             CalculateArea();
-                            Console.WriteLine("If you want to Continue Conditional Program? Press Y or Skip Program Press N");
+                            Console.WriteLine("If you want to Continue Conditional Program? Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 15:
                             FindNumbersEqualOrNot();
-                            Console.WriteLine("If you want to Continue Conditional Program? Press Y or Skip Program Press N");
+                            Console.WriteLine("If you want to Continue Conditional Program? Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 16:
                             FindVowelOrNot();
-                            Console.WriteLine("If you want to Continue Conditional Program? Press Y or Skip Program Press N");
+                            Console.WriteLine("If you want to Continue Conditional Program? Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 17:
                             FindWeeksDay();
-                            Console.WriteLine("If you want to Continue Conditional Program? Press Y or Skip Program Press N");
+                            Console.WriteLine("If you want to Continue Conditional Program? Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 18:
                             FindVowelInSwitch();
-                            Console.WriteLine("If you want to Continue Conditional Program? Press Y or Skip Program Press N");
+                            Console.WriteLine("If you want to Continue Conditional Program? Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 19:
-                            FindFloatingPointNumber();
-                            Console.WriteLine("If you want to Continue Conditional Program? Press Y or Skip Program Press N");
+                            AirthmeticOperationsOnFloatingNumbers();
+                            Console.WriteLine("If you want to Continue Conditional Program? Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 20:
                             HealthClub();
-                            Console.WriteLine("If you want to Continue Conditional Program? Press Y or Skip Program Press N");
+                            Console.WriteLine("If you want to Continue Conditional Program? Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 21:
                             FindASCII();
-                            Console.WriteLine("If you want to Continue Conditional Program? Press Y or Skip Program Press N");
+                            Console.WriteLine("If you want to Continue Conditional Program? Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 22:
                             GoToStatement();
-                            Console.WriteLine("If you want to Continue Conditional Program? Press Y or Skip Program Press N");
+                            Console.WriteLine("If you want to Continue Conditional Program? Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         default:
@@ -670,7 +671,7 @@
         /// <summary>
         /// This Method is used to Floating Point Number in Switch Case.
         /// </summary>
-        private static void FindFloatingPointNumber()
+        private static void AirthmeticOperationsOnFloatingNumbers()
         {
             Console.WriteLine("Enter a Floating First Number..!");
             float.TryParse(Console.ReadLine(), out float firstnumber);

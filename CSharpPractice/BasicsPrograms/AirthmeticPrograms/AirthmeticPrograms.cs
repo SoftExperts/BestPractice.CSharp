@@ -10,13 +10,13 @@
             bool loopSkipOrContinue = false;
             do
             {
-                Console.WriteLine("Please Enter 1 to Sum Two Values");
-                Console.WriteLine("Please Enter 2 to Subtraction Two Values");
-                Console.WriteLine("Please Enter 3 to Multiplication Two Values");
-                Console.WriteLine("Please Enter 4 to Division Two Values");
+                Console.WriteLine("Please Enter 1 to see the program of Addition of two values.");
+                Console.WriteLine("Please Enter 2 to see the program of Subtraction of two values");
+                Console.WriteLine("Please Enter 3 to see the program of Multiplication of two values");
+                Console.WriteLine("Please Enter 4 to to see the program of Division of two values");
                 Console.WriteLine("Please Enter 'N' to Skip the Program");
+                string? userInput = Console.ReadLine();
 
-                string userInput = Console.ReadLine();
                 bool basicPrograms = int.TryParse(userInput, out int programInputResult);
 
                 if (basicPrograms)
@@ -25,22 +25,22 @@
                     {
                         case 1:
                             Sum();
-                            Console.WriteLine("Do you Want to continue the Airthmetic Programs! Please Enter Y or N");
+                            Console.WriteLine("Do you Want to continue the Airthmetic Programs! Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 2:
                             Subtraction();
-                            Console.WriteLine("Do you Want to Continue the Arithmetic Program! Please Enter Y or N");
+                            Console.WriteLine("Do you Want to Continue the Arithmetic Program! Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 3:
                             Multiplication();
-                            Console.WriteLine("Do you want to continue the Arithmetic Program! Please Enter Y or N");
+                            Console.WriteLine("Do you want to continue the Arithmetic Program!  Press Y for yes or Press N for skip");
                             FindYesOrNo(Console.ReadLine(), ref loopSkipOrContinue);
                             break;
                         case 4:
                             Division();
-                            Console.WriteLine("Do you want to continue the Arithmetic Program! Please Enter Y or N");
+                            Console.WriteLine("Do you want to continue the Arithmetic Program!  Press Y for yes or Press N for skip");
                             break;
                         default:
                             Console.WriteLine("Please Enter 1-4!");

@@ -3,12 +3,12 @@
 namespace CSharpPractice.BasicsPrograms
 
 {
-    public static class OPPsPrograms
+    public static class OOPsPrograms
     {
         /// <summary>
         /// Basic OOPs Programs Contents
         /// </summary>
-        public static void OPPsProgramsContents()
+        public static void OOPsProgramsContents()
         {
             bool loopSkipOrContinue = false;
             do
