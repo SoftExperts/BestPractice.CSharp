@@ -11,6 +11,7 @@
             bool loopSkipOrContinue = false;
             do
             {
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("Please Enter 1 to Display Airthmatic Programs");
                 Console.WriteLine("Please Enter 2 to Display Conditional Programs");
                 Console.WriteLine("Please Enter 3 to Display Looping Programs");

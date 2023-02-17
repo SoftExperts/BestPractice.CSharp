@@ -13,6 +13,7 @@ namespace CSharpPractice.BasicsPrograms
             bool loopSkipOrContinue = false;
             do
             {
+                Console.ForegroundColor = ConsoleColor.Blue;
                 Console.WriteLine("Please Enter 1 to Display Basic OOPs Programs");
                 Console.WriteLine("Please Enter 2 to Display Constructor And Dectructor Programs");
                 Console.WriteLine("Please Enter 3 to Display Properties Programs");

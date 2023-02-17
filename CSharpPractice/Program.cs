@@ -4,6 +4,8 @@ bool loopSkipOrContinue = false;
 
 do
 {
+    //Console.BackgroundColor = ConsoleColor.Red;
+    Console.ForegroundColor = ConsoleColor.Red;
     Console.WriteLine("Please Enter 1 to Execute C# Basics Programs");
     Console.WriteLine("Please Enter 2 to Execute C# OOPs Programs");
     Console.WriteLine("Please Enter 3 to Execute C# Data Structure & Algorithm");
@@ -18,6 +20,7 @@ do
         switch (programInputResult)
         {
             case 1:
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("-- Welcome to C# Basic Programs! --");
                 BasicPrograms.BasicProgramsContents();
                 Console.WriteLine("If you Want to continue? Press Y or End the Programs Press N ");
@@ -25,6 +28,7 @@ do
                 break;
 
             case 2:
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("-- Welcome to C# OOPs Programs! --");
                 OOPsPrograms.OOPsProgramsContents();
                 Console.WriteLine("If you Want to continue? Press Y or End the Programs Press N ");

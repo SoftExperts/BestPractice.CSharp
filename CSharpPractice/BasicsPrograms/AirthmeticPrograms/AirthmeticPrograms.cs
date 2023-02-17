@@ -10,6 +10,7 @@
             bool loopSkipOrContinue = false;
             do
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Please Enter 1 to see the program of Addition of two values.");
                 Console.WriteLine("Please Enter 2 to see the program of Subtraction of two values");
                 Console.WriteLine("Please Enter 3 to see the program of Multiplication of two values");
