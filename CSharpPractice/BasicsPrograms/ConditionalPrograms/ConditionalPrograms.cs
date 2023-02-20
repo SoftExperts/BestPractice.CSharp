@@ -10,6 +10,7 @@
             bool loopSkipOrContinue = false;
             do
             {
+                Console.ForegroundColor= ConsoleColor.Green;
                 Console.WriteLine("Please Enter 1 to see the program of Student Marks Calculation!");
                 Console.WriteLine("Please Enter 2 to see the program of finding two numbers are Equal!");
                 Console.WriteLine("Please Enter 3 to see the program of finding Second Number is Square of First!");

@@ -10,6 +10,7 @@
             bool loopSkipOrContinue = false;
             do
             {
+                Console.ForegroundColor = ConsoleColor.DarkBlue;
                 Console.WriteLine("Please Enter 1 and get the you entered number.");
                 Console.WriteLine("Please Enter 2 and get Student Result.");
                 Console.WriteLine("Please Enter 3 and get the Car color.");

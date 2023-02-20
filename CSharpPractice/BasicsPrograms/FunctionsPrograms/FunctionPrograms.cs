@@ -10,6 +10,7 @@
             bool loopSkipOrContinue = false;
             do
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Please Enter 1 and get the Display Message using function.");
                 Console.WriteLine("Please Enter 2 and get the find maximum numbers.");
                 Console.WriteLine("Pleae Enter 3 and get the Table.");

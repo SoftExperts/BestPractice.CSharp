@@ -10,6 +10,7 @@
             bool loopSkipOrContinue = false;
             do
             {
+                Console.ForegroundColor = ConsoleColor.DarkBlue;
                 Console.WriteLine("-------------------- Method Overriding -----------------");
                 Console.WriteLine("Please Enter 1 and get the Animals Sounds are same same.");
                 Console.WriteLine("Please Enter 2 and get the Animals sounds method override.");

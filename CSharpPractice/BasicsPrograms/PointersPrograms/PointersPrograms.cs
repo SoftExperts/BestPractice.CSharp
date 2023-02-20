@@ -13,6 +13,7 @@ namespace CSharpPractice.BasicsPrograms
             bool loopSkipOrContinue = false;
             do
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Please Enter 1 and get the value of address using pointer.");
                 Console.WriteLine("Please Enter 2 and get the value and address.");
                 Console.WriteLine("Pleae Enter 3 and get the any type of variables..");

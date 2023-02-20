@@ -12,6 +12,7 @@ namespace CSharpPractice.OPPsPrograms
             bool loopSkipOrContinue = false;
             do
             {
+                Console.ForegroundColor = ConsoleColor.DarkBlue;
                 Console.WriteLine("-------------------- Encapsulation -----------------");
                 Console.WriteLine("Please Enter 1 and get the working Encapsulation.");
                 Console.WriteLine("Please Enter 'N' to Skip the Program");

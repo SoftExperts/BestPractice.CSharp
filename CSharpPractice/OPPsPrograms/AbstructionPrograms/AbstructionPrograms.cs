@@ -10,6 +10,7 @@
             bool loopSkipOrContinue = false;
             do
             {
+                Console.ForegroundColor= ConsoleColor.DarkBlue;
                 Console.WriteLine("-------------------- Abstruct Method and Classes -----------------");
                 Console.WriteLine("Please Enter 1 and get the working Abstruct Method.");
                 Console.WriteLine("Please Enter 2 and get the working Abstruct Class in with method.");

@@ -10,6 +10,7 @@
             bool loopSkipOrContinue = false;
             do
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Please Enter 1 and to see the program of all values in the arrays.");
                 Console.WriteLine("Please Enter 2 and to see the program of all values using for loop.");
                 Console.WriteLine("Please Enter 3 and to see the program of sum and average of these values.");

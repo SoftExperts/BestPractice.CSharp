@@ -10,6 +10,7 @@
             bool loopSkipOrContinue = false;
             do
             {
+                Console.ForegroundColor = ConsoleColor.DarkBlue;
                 Console.WriteLine("Please Enter 1 and get the Static and Default constructors will invoke for first instance.");
                 Console.WriteLine("Please Enter 2 and get the static Constructor.");
                 Console.WriteLine("Please Enter 3 and get the Car Model.");

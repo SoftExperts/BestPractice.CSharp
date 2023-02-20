@@ -12,6 +12,7 @@ namespace CSharpPractice.OPPsPrograms
             bool loopSkipOrContinue = false;
             do
             {
+                Console.ForegroundColor = ConsoleColor.DarkBlue;
                 Console.WriteLine("-------------------- Enum -----------------");
                 Console.WriteLine("Please Enter 1 and get the working of Enumeration function.");
                 Console.WriteLine("Please Enter 2 and get the enum example changing start index");

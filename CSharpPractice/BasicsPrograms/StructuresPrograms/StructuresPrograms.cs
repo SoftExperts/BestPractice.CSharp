@@ -12,6 +12,7 @@ namespace CSharpPractice.BasicsPrograms
             bool loopSkipOrContinue = false;
             do
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Please Enter 1 and get the Student Record.");
                 Console.WriteLine("Please Enter 2 and get the Date of Birth");
                 Console.WriteLine("Pleae Enter 3 and get most costly books.");

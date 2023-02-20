@@ -10,6 +10,7 @@
             bool loopSkipOrContinue = false;
             do
             {
+                Console.ForegroundColor = ConsoleColor.DarkBlue;
                 Console.WriteLine("Please Enter 1 and get the Properties Method.");
                 Console.WriteLine("Please Enter 2 and get the Automatic Properties (Short Hand).");
                 Console.WriteLine("Please Enter 3 and get the How to work Counter.");

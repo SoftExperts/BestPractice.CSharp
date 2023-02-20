@@ -13,6 +13,7 @@ namespace CSharpPractice.BasicsPrograms.LoopingPrograms
             bool loopSkipOrContinue = false;
             do
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Please Enter 1 and get Display Masseges for any times using While Loop.");
                 Console.WriteLine("Please Enter 2 and get display Counting Numbers from 1 - 10 using while loop.");
                 Console.WriteLine("Please Enter 3 and get display counting numbers and Sum of all numbers.");

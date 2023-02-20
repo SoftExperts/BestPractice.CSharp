@@ -10,6 +10,7 @@
             bool loopSkipOrContinue = false;
             do
             {
+                Console.ForegroundColor = ConsoleColor.DarkBlue;
                 Console.WriteLine("Please Enter 1 and get the Single Level Inheritance Example: Inheriting Fields.");
                 Console.WriteLine("Please Enter 2 and get the inheritance in C# which inherits methods only.");
                 Console.WriteLine("Please Enter 'N' to Skip the Program");
